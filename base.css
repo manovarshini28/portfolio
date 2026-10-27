@@ -1,0 +1,37 @@
+/* BASE: colours, reset, and page defaults */
+:root {
+    --pink: #ff77ad;
+    --pink-light: #ffe0ee;
+    --rose: #d94283;
+    --lilac: #a995ff;
+    --lilac-light: #eee8ff;
+    --yellow: #ffe28b;
+    --mint: #baf3d7;
+    --peach: #ffc8ad;
+    --blue: #bce8ff;
+    --ink: #50364e;
+    --muted: #816b82;
+    --paper: #fffdfb;
+    --line: #f5c7dc;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: var(--ink);
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background:
+        radial-gradient(circle at 8% 12%, #ffe0ef 0 7%, transparent 23%),
+        radial-gradient(circle at 92% 76%, #e6ddff 0 8%, transparent 25%),
+        #fff8fc;
+}
+input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+a { color: inherit; }
+::selection { background: #ffc4dd; color: #50364e; }

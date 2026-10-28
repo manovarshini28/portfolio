@@ -23,20 +23,16 @@
         white-space: normal;
         text-align: center;
     }
-
     nav {
         gap: 2px;
     }
-
     nav label {
         padding: 7px 8px;
         font-size: 12px;
     }
-
     nav label span {
         display: none;
     }
-
     .slider {
         width: 96%;
         height: calc(100svh - 175px);
@@ -48,7 +44,6 @@
     .slides {
         height: 100%;
     }
-
     .slide {
         height: 100%;
         min-height: 0;
@@ -58,7 +53,6 @@
         justify-content: center;
         overflow: hidden;
     }
-
     h1 {
         font-size: clamp(30px, 8vw, 42px);
         margin: 5px 0;
@@ -68,7 +62,6 @@
         font-size: clamp(25px, 7vw, 34px);
         margin: 5px 0;
     }
-
     p {
         font-size: 12px;
         line-height: 1.4;
@@ -84,7 +77,6 @@
     .home-slide {
         gap: 5px;
     }
-
     .hero-art {
         min-height: 0;
         max-height: 125px;
@@ -109,7 +101,6 @@
         padding: 10px 12px;
         font-size: 12px;
     }
-
     .sticker-top {
         top: 5px;
         left: 3%;
@@ -133,11 +124,9 @@
     .floatie-one {
         left: 2%;
     }
-
     .floatie-two {
         right: 3%;
     }
-
     .about-grid,
     .project-grid {
         grid-template-columns: 1fr;
@@ -222,27 +211,22 @@
     .contact-doodles .doodle {
         font-size: 22px;
     }
-
     .doodle-one,
     .doodle-three {
         left: 3%;
     }
-
     .doodle-two,
     .doodle-four {
         right: 3%;
     }
-
     .slide-number {
         right: 10px;
         bottom: 8px;
         font-size: 9px;
     }
-
     .dots {
         bottom: 8px;
     }
-
     .site-footer {
         justify-content: center;
         text-align: center;
@@ -250,18 +234,15 @@
         padding: 8px 5px;
     }
 }
-
 @media (max-width: 370px) {
     nav label {
         padding: 6px;
         font-size: 11px;
     }
-
     .hero-actions {
         flex-direction: column;
         align-items: center;
     }
-
     .hero-actions .btn {
         width: 100%;
         max-width: 240px;
@@ -279,120 +260,3 @@
     *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
 }
 
-@media (max-width: 620px) {
-    .slider {
-        height: calc(100svh - 265px);
-        min-height: 0;
-        overflow: hidden;
-    }
-
-    .slides {
-        height: 100%;
-    }
-
-    .slide {
-        height: 100%;
-        min-height: 0;
-        box-sizing: border-box;
-        padding: 8px 10px 24px;
-        gap: 4px;
-        justify-content: center;
-        overflow: hidden;
-    }
-
-    .content,
-    .section-heading {
-        flex-shrink: 1;
-        min-height: 0;
-    }
-
-    .tag {
-        margin-bottom: 4px;
-        padding: 5px 8px;
-    }
-
-    h1 {
-        font-size: clamp(25px, 6vw, 34px);
-        margin: 4px 0;
-    }
-
-    h2 {
-        font-size: clamp(22px, 5.5vw, 30px);
-        margin: 4px 0;
-    }
-
-    p {
-        font-size: 11px;
-        line-height: 1.3;
-        margin: 4px 0;
-    }
-
-    .home-slide {
-        gap: 3px;
-    }
-
-    .hero-art {
-        min-height: 0;
-        max-height: 75px;
-        overflow: hidden;
-    }
-
-    .hero-actions {
-        margin-top: 3px;
-        gap: 4px;
-    }
-
-    .btn {
-        padding: 8px 10px;
-        font-size: 11px;
-    }
-
-    .about-grid,
-    .project-grid {
-        gap: 5px;
-    }
-
-    .paper-note {
-        padding: 8px;
-    }
-
-    .fact-card,
-    .skill-card {
-        min-height: 0;
-        padding: 6px;
-        gap: 3px;
-    }
-
-    .fact-card h3,
-    .project-card h3 {
-        font-size: 12px;
-    }
-
-    .fact-card p,
-    .skill-card p,
-    .skill-card small {
-        font-size: 9px;
-        line-height: 1.25;
-    }
-
-    .learning-strip {
-        padding: 5px;
-        font-size: 9px;
-    }
-
-    .project-art {
-        min-height: 45px;
-    }
-
-    .project-info {
-        padding: 7px;
-    }
-
-    .contact-card {
-        padding: 12px;
-    }
-
-    .garland {
-        opacity: .2;
-    }
-}

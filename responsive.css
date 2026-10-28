@@ -10,57 +10,264 @@
     .fact-card { padding: 14px 10px; }
     .garland { opacity: .7; transform: scale(.8); }
 }
+
 @media (max-width: 620px) {
-    .site-header { width: 96%; padding: 18px 5px 14px; }
-    .logo { font-size: 21px; }
-    nav { gap: 3px; }
-    nav label { padding: 8px 9px; font-size: 12px; }
-    nav label span { display: none; }
-    .slider { width: 96%; height: calc(100svh - 145px); min-height:0;border-radius:24px;overflow:hidden; }
-    .slide { min-height: 0; height: 100%; padding: 12px 14px; gap: 8px;overflow:hidden; }
-    h1 { font-size: clamp(40px, 11vw, 60px); }
-    h2 { font-size: clamp(33px, 9vw, 45px); }
-    p { font-size: 12px; line-height: 1.4; }
-    .home-slide { gap: 0; }
-    .hero-art { min-height: 0; width: 100%; }
-    .computer-card { width: 180px; }
-    .computer-screen { min-height: 100px; }
-    .hero-actions { gap: 6px; margin-top: 8px; }
-    .btn { padding: 12px 15px; font-size: 12px; }
-    .sticker-top { top: 12px; left: 5%; font-size: 10px; }
-    .garland { opacity: .35; transform: scale(.55); transform-origin: top left; }
-    .garland-two { transform-origin: top right; }
-    .floatie { font-size: 23px; }
-    .floatie-one { left: 2%; }
-    .floatie-two { right: 3%; }
-    .about-grid, .project-grid { grid-template-columns: 1fr; }
-    .about-grid { max-width: 450px; }
-    .paper-note { padding: 23px; }
-    .about-facts { gap: 9px; }
-    .fact-card { padding: 12px 9px; gap: 7px; }
-    .fact-icon { font-size: 21px; }
-    .fact-card h3 { font-size: 14px; }
-    .fact-card p { font-size: 11px; }
-    .skill-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-    .skill-card { min-height: 140px; padding: 15px 8px; }
-    .skill-card p { font-size: 11px; }
-    .skill-card small { font-size: 10px; }
-    .learning-strip { font-size: 11px; padding: 11px; }
-    .project-grid { max-width: 440px; gap: 14px; }
-    .project-art { min-height: 105px; }
-    .project-info { padding: 17px; }
-    .project-card h3 { font-size: 19px; }
-    .contact-card { padding: 38px 22px 28px; }
-    .contact-stamp { right: 10px; font-size: 7px; }
-    .contact-doodles .doodle { font-size: 28px; }
-    .doodle-one { left: 4%; }
-    .doodle-two { right: 4%; }
-    .doodle-three { left: 4%; }
-    .doodle-four { right: 5%; }
-    .slide-number { right: 14px; bottom: 19px; font-size: 10px; }
-    .dots { bottom: 17px; }
-    .site-footer { justify-content: center; text-align: center; font-size: 10px; }
+    .site-header {
+        width: 96%;
+        padding: 10px 5px 8px;
+        gap: 8px;
+    }
+
+    .logo {
+        font-size: 20px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    nav {
+        gap: 2px;
+    }
+
+    nav label {
+        padding: 7px 8px;
+        font-size: 12px;
+    }
+
+    nav label span {
+        display: none;
+    }
+
+    .slider {
+        width: 96%;
+        height: calc(100svh - 175px);
+        min-height: 0;
+        border-radius: 24px;
+        overflow: hidden;
+    }
+
+    .slides {
+        height: 100%;
+    }
+
+    .slide {
+        height: 100%;
+        min-height: 0;
+        box-sizing: border-box;
+        padding: 12px 14px;
+        gap: 6px;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: clamp(30px, 8vw, 42px);
+        margin: 5px 0;
+    }
+
+    h2 {
+        font-size: clamp(25px, 7vw, 34px);
+        margin: 5px 0;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 1.4;
+        margin: 5px 0;
+    }
+
+    .tag {
+        margin-bottom: 6px;
+        padding: 7px 10px;
+        letter-spacing: 1px;
+    }
+
+    .home-slide {
+        gap: 5px;
+    }
+
+    .hero-art {
+        min-height: 0;
+        max-height: 125px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .computer-card {
+        width: 150px;
+    }
+
+    .computer-screen {
+        min-height: 75px;
+    }
+
+    .hero-actions {
+        gap: 6px;
+        margin-top: 5px;
+    }
+
+    .btn {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .sticker-top {
+        top: 5px;
+        left: 3%;
+        font-size: 9px;
+    }
+
+    .garland {
+        opacity: .25;
+        transform: scale(.45);
+        transform-origin: top left;
+    }
+
+    .garland-two {
+        transform-origin: top right;
+    }
+
+    .floatie {
+        font-size: 18px;
+    }
+
+    .floatie-one {
+        left: 2%;
+    }
+
+    .floatie-two {
+        right: 3%;
+    }
+
+    .about-grid,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid {
+        max-width: 450px;
+        gap: 8px;
+    }
+
+    .paper-note {
+        padding: 12px;
+    }
+
+    .about-facts {
+        gap: 6px;
+    }
+
+    .fact-card {
+        padding: 8px 6px;
+        gap: 5px;
+    }
+
+    .fact-icon {
+        font-size: 18px;
+    }
+
+    .fact-card h3 {
+        font-size: 12px;
+    }
+
+    .fact-card p {
+        font-size: 10px;
+    }
+
+    .skill-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 7px;
+    }
+
+    .skill-card {
+        min-height: 0;
+        padding: 9px 6px;
+    }
+
+    .skill-card p,
+    .skill-card small {
+        font-size: 10px;
+    }
+
+    .learning-strip {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .project-grid {
+        max-width: 440px;
+        gap: 8px;
+    }
+
+    .project-art {
+        min-height: 70px;
+    }
+
+    .project-info {
+        padding: 10px;
+    }
+
+    .project-card h3 {
+        font-size: 16px;
+    }
+
+    .contact-card {
+        padding: 20px 14px;
+    }
+
+    .contact-stamp {
+        right: 8px;
+        font-size: 7px;
+    }
+
+    .contact-doodles .doodle {
+        font-size: 22px;
+    }
+
+    .doodle-one,
+    .doodle-three {
+        left: 3%;
+    }
+
+    .doodle-two,
+    .doodle-four {
+        right: 3%;
+    }
+
+    .slide-number {
+        right: 10px;
+        bottom: 8px;
+        font-size: 9px;
+    }
+
+    .dots {
+        bottom: 8px;
+    }
+
+    .site-footer {
+        justify-content: center;
+        text-align: center;
+        font-size: 9px;
+        padding: 8px 5px;
+    }
 }
+
+@media (max-width: 370px) {
+    nav label {
+        padding: 6px;
+        font-size: 11px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        max-width: 240px;
+    }
+}
+
 @media (max-width: 370px) {
     nav label { padding: 7px; font-size: 11px; }
     .about-facts { grid-template-columns: 1fr; }
@@ -70,55 +277,4 @@
 }
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
-}
-@media (max-width: 768px) {
-  .slider {
-    height: 100svh;
-    min-height: 0;
-    overflow: hidden;
-  }
-
-  .slides {
-    height: 100%;
-  }
-
-  .slide {
-    height: 100%;
-    min-height: 0;
-    box-sizing: border-box;
-    padding: 12px;
-    overflow: hidden;
-  }
-
-  .content {
-    gap: 8px;
-  }
-
-  h1 {
-    font-size: clamp(24px, 6vw, 34px);
-    margin: 6px 0;
-  }
-
-  h2 {
-    font-size: 22px;
-    margin: 6px 0;
-  }
-
-  p {
-    font-size: 13px;
-    line-height: 1.35;
-    margin: 5px 0;
-  }
-
-  .art {
-    max-height: 150px;
-  }
-
-  .cards {
-    gap: 8px;
-  }
-
-  .card {
-    padding: 10px;
-  }
 }
